@@ -1,0 +1,3 @@
+export const WHATSAPP_NUMBER = '5492494687944'
+
+export const WHATSAPP_DISPLAY = '+54 249 468 79 44'

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #F5E9CE;
+  --color-cocoa: #3C1A1A;
+  --color-mist: #A6BBCE;
+  --color-blush: #F5D9D9;
+  --font-sans: "Montserrat", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Kaushan Script", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+body {
+  background-color: #F5E9CE;
+  color: #3C1A1A;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
