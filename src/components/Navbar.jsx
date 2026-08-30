@@ -68,7 +68,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setMenuOpen((v) => !v)}
-          className="flex items-center justify-center rounded-full bg-[#F5E9CE] p-2.5 text-[#3C1A1A] shadow-md shadow-black/30 md:hidden"
+          className="relative flex items-center justify-center rounded-full bg-[#F5E9CE] p-2.5 text-[#3C1A1A] shadow-md shadow-black/30 md:hidden"
           aria-label="Abrir menú"
           aria-expanded={menuOpen}
         >
@@ -85,6 +85,11 @@ export default function Navbar() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             )}
           </svg>
+          {totalCount > 0 && (
+            <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-[#F5D9D9] px-1 text-xs font-bold text-[#3C1A1A]">
+              {totalCount}
+            </span>
+          )}
         </button>
       </nav>
 

@@ -35,13 +35,13 @@ export default function ProductCard({ product }) {
           }}
         />
       </div>
-      <div className="flex flex-1 flex-col gap-2 p-4">
-        <h3 className="text-base font-bold text-[#3C1A1A]">{product.name}</h3>
+      <div className="flex flex-1 flex-col gap-2 p-3 sm:p-4">
+        <h3 className="text-sm font-bold text-[#3C1A1A] sm:text-base">{product.name}</h3>
         <p className="text-xs text-[#3C1A1A]/70">{product.description}</p>
-        <p className="text-lg font-bold text-[#3C1A1A]">{formatPrice(product.price)}</p>
+        <p className="text-base font-bold text-[#3C1A1A] sm:text-lg">{formatPrice(product.price)}</p>
 
         <div className="mt-auto flex flex-col gap-2">
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <div className="flex items-center rounded-xl bg-[#A6BBCE]">
               <button
                 type="button"
