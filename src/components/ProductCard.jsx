@@ -41,37 +41,37 @@ export default function ProductCard({ product }) {
         <p className="text-base font-bold text-[#3C1A1A] sm:text-lg">{formatPrice(product.price)}</p>
 
         <div className="mt-auto flex flex-col gap-2">
-          <div className="flex flex-wrap items-center gap-2">
-            <div className="flex items-center rounded-xl bg-[#A6BBCE]">
-              <button
-                type="button"
-                onClick={decrement}
-                className="flex h-8 w-8 items-center justify-center rounded-full text-[#3C1A1A] hover:bg-[#3C1A1A] hover:text-[#F5E9CE]"
-                aria-label="Disminuir cantidad"
-              >
-                −
-              </button>
-              <span className="w-7 text-center font-bold text-[#3C1A1A]">{quantity}</span>
-              <button
-                type="button"
-                onClick={increment}
-                className="flex h-8 w-8 items-center justify-center rounded-full text-[#3C1A1A] hover:bg-[#3C1A1A] hover:text-[#F5E9CE]"
-                aria-label="Aumentar cantidad"
-              >
-                +
-              </button>
-            </div>
+          <div className="flex items-center justify-between rounded-xl bg-[#A6BBCE]">
+            <button
+              type="button"
+              onClick={decrement}
+              className="flex h-9 w-9 items-center justify-center rounded-full text-[#3C1A1A] hover:bg-[#3C1A1A] hover:text-[#F5E9CE]"
+              aria-label="Disminuir cantidad"
+            >
+              −
+            </button>
+            <span className="text-center font-bold text-[#3C1A1A]">{quantity}</span>
+            <button
+              type="button"
+              onClick={increment}
+              className="flex h-9 w-9 items-center justify-center rounded-full text-[#3C1A1A] hover:bg-[#3C1A1A] hover:text-[#F5E9CE]"
+              aria-label="Aumentar cantidad"
+            >
+              +
+            </button>
+          </div>
+          <div className="grid grid-cols-2 gap-2">
             <button
               type="button"
               onClick={() => quickAdd(6)}
-              className="flex-[1.4] rounded-xl bg-[#A6BBCE] px-2 py-2 text-xs font-bold text-[#3C1A1A] transition-colors hover:bg-[#3C1A1A] hover:text-[#F5E9CE]"
+              className="rounded-xl bg-[#A6BBCE] px-2 py-2 text-sm font-bold text-[#3C1A1A] transition-colors hover:bg-[#3C1A1A] hover:text-[#F5E9CE]"
             >
               x6
             </button>
             <button
               type="button"
               onClick={() => quickAdd(12)}
-              className="flex-[1.4] rounded-xl bg-[#A6BBCE] px-2 py-2 text-xs font-bold text-[#3C1A1A] transition-colors hover:bg-[#3C1A1A] hover:text-[#F5E9CE]"
+              className="rounded-xl bg-[#A6BBCE] px-2 py-2 text-sm font-bold text-[#3C1A1A] transition-colors hover:bg-[#3C1A1A] hover:text-[#F5E9CE]"
             >
               x12
             </button>
