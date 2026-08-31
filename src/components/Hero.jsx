@@ -11,13 +11,17 @@ export default function Hero() {
         className="pointer-events-none absolute inset-0 h-full w-full scale-110 object-cover opacity-60 blur-md"
       />
       <div className="pointer-events-none absolute inset-0 bg-[#F5D9D9]/45" />
+      <div
+        className="hero-pattern pointer-events-none absolute inset-0 text-[#3C1A1A]/[0.07]"
+        aria-hidden="true"
+      />
 
       <div className="relative z-10 max-w-4xl">
         <h1 className="font-display text-6xl leading-tight text-[#3C1A1A] [text-shadow:0_2px_10px_rgba(166,187,206,0.6)] sm:text-7xl md:text-8xl">
           La chica de las Cookies
         </h1>
         <p className="mt-4 text-sm font-semibold uppercase tracking-widest text-[#3C1A1A]/70 [text-shadow:0_1px_3px_rgba(166,187,206,0.7)]">
-          de Valentina Colotti
+          by Valentina Colotti
         </p>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-[#3C1A1A]/80 [text-shadow:0_1px_3px_rgba(166,187,206,0.7)]">
           Cookies artesanales horneadas con amor. Del horno a tu puerta, o

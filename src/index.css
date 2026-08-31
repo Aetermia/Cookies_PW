@@ -26,3 +26,29 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.hero-pattern {
+  background-image: radial-gradient(currentColor 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+@keyframes float-cookie {
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--rot, 0deg));
+  }
+  50% {
+    transform: translateY(-16px) rotate(calc(var(--rot, 0deg) + 6deg));
+  }
+}
+
+.floating-cookie {
+  animation: float-cookie var(--dur, 7s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-cookie {
+    animation: none;
+  }
+}

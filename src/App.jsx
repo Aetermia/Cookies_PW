@@ -44,7 +44,7 @@ function App() {
       {toast && (
         <div
           role="status"
-          className="fixed bottom-6 left-1/2 z-[70] -translate-x-1/2 rounded-xl bg-[#3C1A1A] px-6 py-3 font-semibold text-[#F5E9CE] shadow-xl"
+          className="fixed left-1/2 top-20 z-[70] max-w-[calc(100%-2rem)] -translate-x-1/2 rounded-xl bg-[#3C1A1A] px-6 py-3 text-center font-semibold text-[#F5E9CE] shadow-xl"
         >
           {toast}
         </div>

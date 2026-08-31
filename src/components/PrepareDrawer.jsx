@@ -42,7 +42,7 @@ export default function PrepareDrawer() {
         }`}
       >
         <div className="flex items-center justify-between border-b border-[#A6BBCE] px-6 py-4">
-          <h2 className="text-xl font-bold text-[#3C1A1A]">Preparar en casa</h2>
+          <h2 className="text-xl font-bold text-[#3C1A1A]">Guía de horneado en casa</h2>
           <button
             type="button"
             onClick={() => setIsPrepareOpen(false)}
