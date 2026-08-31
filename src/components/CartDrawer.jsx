@@ -392,7 +392,7 @@ export default function CartDrawer() {
                 onClick={handleCheckout}
                 className="w-full rounded-xl bg-[#3C1A1A] px-6 py-3 font-semibold text-[#F5E9CE] transition-colors hover:bg-[#A6BBCE] hover:text-[#3C1A1A]"
               >
-                Confirmar pedido por WhatsApp
+                Continuar con el pedido
               </button>
               <button
                 type="button"

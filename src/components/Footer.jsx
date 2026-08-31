@@ -1,15 +1,19 @@
 import { WHATSAPP_DISPLAY, WHATSAPP_NUMBER } from '../lib/constants'
+import GraciasBadge from './GraciasBadge'
 
 export default function Footer() {
   return (
     <footer id="contacto" className="bg-[#3C1A1A] text-[#F5E9CE]">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-3">
-        <div>
-          <h3 className="mb-3 text-xl font-bold">La chica de las Cookies</h3>
-          <p className="text-[#F5E9CE]/80">
-            Cookies artesanales preparadas con ingredientes de calidad y muchísima
-            pasión. Pedinos tus favoritas y las llevamos donde las necesites.
-          </p>
+        <div className="flex items-start gap-5">
+          <GraciasBadge className="mt-1 h-20 w-20 sm:h-28 sm:w-28" />
+          <div>
+            <h3 className="mb-3 text-xl font-bold">La chica de las Cookies</h3>
+            <p className="text-[#F5E9CE]/80">
+              Cookies artesanales preparadas con ingredientes de calidad y muchísima
+              pasión. Pedinos tus favoritas y las llevamos donde las necesites.
+            </p>
+          </div>
         </div>
 
         <div>

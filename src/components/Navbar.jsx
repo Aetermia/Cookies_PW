@@ -14,28 +14,29 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-[#3C1A1A] shadow-md">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6">
-        <a
-          href="#inicio"
-          className="font-display text-2xl leading-none text-[#F5E9CE]"
-        >
-          La chica de las Cookies
+      <nav className="flex w-full items-center justify-between gap-4 px-4 py-2.5 sm:px-6">
+        <a href="#inicio" className="shrink-0">
+          <img
+            src="/logo-mark-dark.svg"
+            alt="La chica de las Cookies"
+            className="h-9 w-auto sm:h-10 md:h-9 lg:h-11"
+          />
         </a>
 
         {/* Desktop nav */}
-        <div className="hidden items-center gap-4 md:flex">
+        <div className="hidden items-center gap-2.5 md:flex lg:gap-4">
           <a
             href="#productos"
-            className="rounded-xl bg-[#F5E9CE] px-5 py-2 font-semibold text-[#3C1A1A] shadow-md shadow-black/30 transition-all hover:bg-[#A6BBCE] hover:shadow-lg"
+            className="whitespace-nowrap rounded-xl bg-[#F5E9CE] px-4 py-2 font-semibold text-[#3C1A1A] shadow-md shadow-black/30 transition-all hover:bg-[#A6BBCE] hover:shadow-lg lg:px-5"
           >
             Productos
           </a>
           <button
             type="button"
             onClick={() => setIsPrepareOpen(true)}
-            className="rounded-xl bg-[#F5E9CE] px-5 py-2 font-semibold text-[#3C1A1A] shadow-md shadow-black/30 transition-all hover:bg-[#A6BBCE] hover:shadow-lg"
+            className="whitespace-nowrap rounded-xl bg-[#F5E9CE] px-4 py-2 font-semibold text-[#3C1A1A] shadow-md shadow-black/30 transition-all hover:bg-[#A6BBCE] hover:shadow-lg lg:px-5"
           >
-            Preparar en casa
+            Guía de horneado
           </button>
           <button
             type="button"
@@ -112,7 +113,7 @@ export default function Navbar() {
               }}
               className="rounded-xl bg-[#F5E9CE] px-5 py-3 text-left font-semibold text-[#3C1A1A] transition-colors hover:bg-[#A6BBCE]"
             >
-              Preparar en casa
+              Guía de horneado
             </button>
             <button
               type="button"
