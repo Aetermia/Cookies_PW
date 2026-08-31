@@ -1,12 +1,3 @@
-const FLOATING_COOKIES = [
-  { src: '/cookies-classic.svg', top: '10%', left: '6%', size: 56, rot: -8, dur: 7, delay: 0 },
-  { src: '/cookies-frozen-matcha.svg', top: '14%', left: '90%', size: 60, rot: 10, dur: 8, delay: 0.6 },
-  { src: '/cookies-oatmeal.svg', top: '52%', left: '3%', size: 42, rot: 6, dur: 6.5, delay: 1.2 },
-  { src: '/cookies-double.svg', top: '58%', left: '94%', size: 48, rot: -6, dur: 7.5, delay: 0.3 },
-  { src: '/cookies-frozen-redvelvet.svg', top: '86%', left: '10%', size: 38, rot: 12, dur: 6.8, delay: 1.6 },
-  { src: '/cookies-frozen-nutella.svg', top: '84%', left: '88%', size: 44, rot: -10, dur: 7.2, delay: 0.9 },
-]
-
 export default function Hero() {
   return (
     <section
@@ -24,25 +15,6 @@ export default function Hero() {
         className="hero-pattern pointer-events-none absolute inset-0 text-[#3C1A1A]/[0.07]"
         aria-hidden="true"
       />
-
-      {FLOATING_COOKIES.map((c, i) => (
-        <img
-          key={i}
-          src={c.src}
-          alt=""
-          aria-hidden="true"
-          className="floating-cookie pointer-events-none absolute select-none opacity-25 drop-shadow-md"
-          style={{
-            top: c.top,
-            left: c.left,
-            width: c.size,
-            height: c.size,
-            '--rot': `${c.rot}deg`,
-            '--dur': `${c.dur}s`,
-            '--delay': `${c.delay}s`,
-          }}
-        />
-      ))}
 
       <div className="relative z-10 max-w-4xl">
         <h1 className="font-display text-6xl leading-tight text-[#3C1A1A] [text-shadow:0_2px_10px_rgba(166,187,206,0.6)] sm:text-7xl md:text-8xl">
