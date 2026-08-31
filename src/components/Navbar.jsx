@@ -1,13 +1,6 @@
 import { useState } from 'react'
 import { useCart } from '../context/CartContext'
 
-const NAV_COOKIES = [
-  { src: '/cookies-classic.svg', left: '8%', top: '0%', size: 28, rot: -10, dur: 6, delay: 0 },
-  { src: '/cookies-double.svg', left: '34%', top: '48%', size: 22, rot: 8, dur: 7, delay: 0.6 },
-  { src: '/cookies-oatmeal.svg', left: '60%', top: '2%', size: 26, rot: -6, dur: 6.5, delay: 1.1 },
-  { src: '/cookies-frozen-matcha.svg', left: '86%', top: '46%', size: 24, rot: 10, dur: 7.5, delay: 0.3 },
-]
-
 export default function Navbar() {
   const { totalCount, setIsOpen, setIsPrepareOpen } = useCart()
   const [menuOpen, setMenuOpen] = useState(false)
@@ -20,35 +13,14 @@ export default function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-50 overflow-hidden bg-[#3C1A1A] shadow-md">
-      <nav className="relative flex w-full items-center justify-between gap-4 px-4 py-2.5 sm:px-6">
+    <header className="sticky top-0 z-50 bg-[#3C1A1A] shadow-md">
+      <nav className="flex w-full items-center justify-between gap-4 px-4 py-2.5 sm:px-6">
         <a
           href="#inicio"
-          className="relative shrink-0 font-display text-2xl leading-none text-[#F5E9CE]"
+          className="shrink-0 font-display text-2xl leading-none text-[#F5E9CE]"
         >
           La chica de las Cookies
         </a>
-
-        {/* Decorative cookies filling the gap between the logo and the buttons */}
-        <div className="relative hidden h-9 min-w-0 flex-1 md:block" aria-hidden="true">
-          {NAV_COOKIES.map((c, i) => (
-            <img
-              key={i}
-              src={c.src}
-              alt=""
-              className="floating-cookie pointer-events-none absolute opacity-45"
-              style={{
-                left: c.left,
-                top: c.top,
-                width: c.size,
-                height: c.size,
-                '--rot': `${c.rot}deg`,
-                '--dur': `${c.dur}s`,
-                '--delay': `${c.delay}s`,
-              }}
-            />
-          ))}
-        </div>
 
         {/* Desktop nav */}
         <div className="hidden items-center gap-2.5 md:flex lg:gap-4">
