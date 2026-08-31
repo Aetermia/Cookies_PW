@@ -44,19 +44,12 @@ export default function Hero() {
         />
       ))}
 
-      <img
-        src="/logo-mark-light.svg"
-        alt=""
-        aria-hidden="true"
-        className="pointer-events-none absolute left-6 top-6 hidden h-9 w-auto -rotate-6 opacity-80 drop-shadow-md sm:block md:left-10 md:top-10 md:h-11"
-      />
-
       <div className="relative z-10 max-w-4xl">
         <h1 className="font-display text-6xl leading-tight text-[#3C1A1A] [text-shadow:0_2px_10px_rgba(166,187,206,0.6)] sm:text-7xl md:text-8xl">
           La chica de las Cookies
         </h1>
         <p className="mt-4 text-sm font-semibold uppercase tracking-widest text-[#3C1A1A]/70 [text-shadow:0_1px_3px_rgba(166,187,206,0.7)]">
-          de Valentina Colotti
+          by Valentina Colotti
         </p>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-[#3C1A1A]/80 [text-shadow:0_1px_3px_rgba(166,187,206,0.7)]">
           Cookies artesanales horneadas con amor. Del horno a tu puerta, o
